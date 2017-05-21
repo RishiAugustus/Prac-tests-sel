@@ -2,30 +2,30 @@
 <testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Basic Tests" duration-ms="38037" started-at="2017-05-19T05:32:26Z" finished-at="2017-05-19T05:33:04Z">
+  <suite name="Basic Tests" duration-ms="29901" started-at="2017-05-20T10:43:46Z" finished-at="2017-05-20T10:44:16Z">
     <groups>
       <group name="ContactUs-Tests">
-        <method signature="ContactPageTests.verifyContactPageTitle()[pri:1, instance:test.java.ContactTests.ContactPageTests@1975490]" name="verifyContactPageTitle" class="test.java.ContactTests.ContactPageTests"/>
-        <method signature="ContactPageTests.TestContactSalesPage()[pri:2, instance:test.java.ContactTests.ContactPageTests@1975490]" name="TestContactSalesPage" class="test.java.ContactTests.ContactPageTests"/>
+        <method signature="ContactPageTests.verifyContactPageTitle()[pri:1, instance:test.java.ContactTests.ContactPageTests@7471b5]" name="verifyContactPageTitle" class="test.java.ContactTests.ContactPageTests"/>
+        <method signature="ContactPageTests.TestContactSalesPage()[pri:2, instance:test.java.ContactTests.ContactPageTests@7471b5]" name="TestContactSalesPage" class="test.java.ContactTests.ContactPageTests"/>
       </group> <!-- ContactUs-Tests -->
     </groups>
-    <test name="basic" duration-ms="38037" started-at="2017-05-19T05:32:26Z" finished-at="2017-05-19T05:33:04Z">
+    <test name="basic" duration-ms="29901" started-at="2017-05-20T10:43:46Z" finished-at="2017-05-20T10:44:16Z">
       <class name="test.java.ContactTests.ContactPageTests">
-        <test-method status="PASS" signature="init()[pri:0, instance:test.java.ContactTests.ContactPageTests@1975490]" name="init" is-config="true" duration-ms="19141" started-at="2017-05-19T11:02:26Z" finished-at="2017-05-19T11:02:45Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:test.java.ContactTests.ContactPageTests@7471b5]" name="init" is-config="true" duration-ms="17434" started-at="2017-05-20T16:13:46Z" finished-at="2017-05-20T16:14:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="verifyContactPageTitle()[pri:1, instance:test.java.ContactTests.ContactPageTests@1975490]" name="verifyContactPageTitle" duration-ms="32" started-at="2017-05-19T11:02:45Z" finished-at="2017-05-19T11:02:46Z">
+        <test-method status="PASS" signature="verifyContactPageTitle()[pri:1, instance:test.java.ContactTests.ContactPageTests@7471b5]" name="verifyContactPageTitle" duration-ms="21" started-at="2017-05-20T16:14:03Z" finished-at="2017-05-20T16:14:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactPageTitle -->
-        <test-method status="PASS" signature="TestContactSalesPage()[pri:2, instance:test.java.ContactTests.ContactPageTests@1975490]" name="TestContactSalesPage" duration-ms="18841" started-at="2017-05-19T11:02:46Z" depends-on-methods="test.java.ContactTests.ContactPageTests.verifyContactPageTitle" finished-at="2017-05-19T11:03:04Z">
+        <test-method status="PASS" signature="TestContactSalesPage()[pri:2, instance:test.java.ContactTests.ContactPageTests@7471b5]" name="TestContactSalesPage" duration-ms="12361" started-at="2017-05-20T16:14:03Z" depends-on-methods="test.java.ContactTests.ContactPageTests.verifyContactPageTitle" finished-at="2017-05-20T16:14:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestContactSalesPage -->
       </class> <!-- test.java.ContactTests.ContactPageTests -->
       <class name="test.java.Basic.SuiteBaseTemplate">
-        <test-method status="PASS" signature="getBrowser(java.lang.String)[pri:0, instance:test.java.Basic.SuiteBaseTemplate@7f6473]" name="getBrowser" is-config="true" duration-ms="5198" started-at="2017-05-19T11:02:21Z" finished-at="2017-05-19T11:02:26Z">
+        <test-method status="PASS" signature="getBrowser(java.lang.String)[pri:0, instance:test.java.Basic.SuiteBaseTemplate@167135c]" name="getBrowser" is-config="true" duration-ms="8573" started-at="2017-05-20T16:13:37Z" finished-at="2017-05-20T16:13:46Z">
           <params>
             <param index="0">
               <value>
