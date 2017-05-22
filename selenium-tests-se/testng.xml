@@ -7,7 +7,8 @@
 			<class name="test.java.Basic.SuiteBaseTemplate" />
 			<!--class name="tests.Basic.testurl" -->
 			<!--class name="tests.BlogTests.BlogTests" -->
-			<class name="test.java.ContactTests.ContactPageTests" />
+			<!--class name="test.java.ContactTests.ContactPageTests" -->
+			<class name="test.java.ContactTests.ContactCustomerSupport" />
 		</classes>
 	</test>
 </suite>

@@ -42,8 +42,7 @@ public class ContactPageTests extends SuiteBaseTemplate {
 		ContactSalesPage.selectRegion("Latin America");
 		BasePageClass.waitForLoad();
 		String ProductNames = ContactSalesPage.getProducNameForCountry("Venezuela");
-		Assert.assertTrue(ProductNames.toLowerCase().contains(ProductName.toLowerCase()));
-		
+		Assert.assertTrue(ProductNames.toLowerCase().contains(ProductName.toLowerCase()));	
 	}
 	
 }

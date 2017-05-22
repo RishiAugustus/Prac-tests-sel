@@ -2,6 +2,9 @@ package main.java.pageobjects;
 
 import static org.testng.Assert.assertFalse;
 
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -193,5 +196,61 @@ public class BasePageClass {
 	 return wait.until(jQueryLoad) && wait.until(jsLoad);
 	   // return wait.until(jsLoad);
 	}
+	
+	public static List<WebElement> findAllLinksOnPage(){
+		List<WebElement> elementList = new ArrayList<WebElement>();
+		elementList = driver.findElements(By.tagName("a"));
+		
+		//images may also contain links
+		elementList.addAll(driver.findElements(By.tagName("img")));
+		
+		List<WebElement> linkList = new ArrayList<WebElement>();
+		
+		for(WebElement elem : elementList)
+		{
+			String url = elem.getAttribute("href");
+			if(url != null && !url.contains("javascript"))
+			{
+				linkList.add(elem);
+			}
+		}
+		return linkList;
+	}
+	
+	public static String isLinkBroken(URL url) throws Exception
+	{
+		String response = "";
+		HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+		try
+		{	
+			connection.connect();
+			response = connection.getResponseMessage();
+			connection.disconnect();
+			return response;
+		} catch(Exception e)
+		{
+			return e.getMessage();
+		}
+	}
+	
+	public static void verifyLinksOnPage() throws Exception{
+		List<WebElement> allLinks = findAllLinksOnPage();
+		System.out.println("No of Links found on Page: " + allLinks.size());
+		
+		for(WebElement elem : allLinks)
+		{
+			URL url = new URL(elem.getAttribute("href"));
+			try 
+			{
+				System.out.println("URL: " + url + " returned: " + isLinkBroken(url));
+				
+			} catch (Exception e) {
+				
+				System.out.println("Exception: " + e.getMessage() + "occured at URL: " + url);
+			}
+			
+		}
+	}
+	
 }
 
