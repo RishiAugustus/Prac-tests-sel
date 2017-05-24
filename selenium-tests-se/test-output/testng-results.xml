@@ -1,31 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Basic Tests" duration-ms="42221" started-at="2017-05-19T03:47:33Z" finished-at="2017-05-19T03:48:15Z">
+  <suite name="Basic Tests" duration-ms="31427" started-at="2017-05-22T12:23:37Z" finished-at="2017-05-22T12:24:09Z">
     <groups>
-      <group name="ContactUs-Tests">
-        <method signature="ContactPageTests.verifyContactPageTitle()[pri:1, instance:test.java.ContactTests.ContactPageTests@3f4d3d]" name="verifyContactPageTitle" class="test.java.ContactTests.ContactPageTests"/>
-        <method signature="ContactPageTests.TestContactSalesPage()[pri:2, instance:test.java.ContactTests.ContactPageTests@3f4d3d]" name="TestContactSalesPage" class="test.java.ContactTests.ContactPageTests"/>
-      </group> <!-- ContactUs-Tests -->
+      <group name="Contact-Sales-Support">
+        <method signature="ContactCustomerSupport.verifyContactProductSupport()[pri:2, instance:test.java.ContactTests.ContactCustomerSupport@3f4d3d]" name="verifyContactProductSupport" class="test.java.ContactTests.ContactCustomerSupport"/>
+        <method signature="ContactCustomerSupport.verifyWonderwareContactDetails()[pri:3, instance:test.java.ContactTests.ContactCustomerSupport@3f4d3d]" name="verifyWonderwareContactDetails" class="test.java.ContactTests.ContactCustomerSupport"/>
+      </group> <!-- Contact-Sales-Support -->
     </groups>
-    <test name="basic" duration-ms="42221" started-at="2017-05-19T03:47:33Z" finished-at="2017-05-19T03:48:15Z">
-      <class name="test.java.ContactTests.ContactPageTests">
-        <test-method status="PASS" signature="init()[pri:0, instance:test.java.ContactTests.ContactPageTests@3f4d3d]" name="init" is-config="true" duration-ms="26730" started-at="2017-05-19T09:17:33Z" finished-at="2017-05-19T09:18:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="verifyContactPageTitle()[pri:1, instance:test.java.ContactTests.ContactPageTests@3f4d3d]" name="verifyContactPageTitle" duration-ms="29" started-at="2017-05-19T09:18:00Z" finished-at="2017-05-19T09:18:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyContactPageTitle -->
-        <test-method status="PASS" signature="TestContactSalesPage()[pri:2, instance:test.java.ContactTests.ContactPageTests@3f4d3d]" name="TestContactSalesPage" duration-ms="15428" started-at="2017-05-19T09:18:00Z" depends-on-methods="test.java.ContactTests.ContactPageTests.verifyContactPageTitle" finished-at="2017-05-19T09:18:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestContactSalesPage -->
-      </class> <!-- test.java.ContactTests.ContactPageTests -->
+    <test name="basic" duration-ms="31427" started-at="2017-05-22T12:23:37Z" finished-at="2017-05-22T12:24:09Z">
       <class name="test.java.Basic.SuiteBaseTemplate">
-        <test-method status="PASS" signature="getBrowser(java.lang.String)[pri:0, instance:test.java.Basic.SuiteBaseTemplate@1baeedf]" name="getBrowser" is-config="true" duration-ms="6855" started-at="2017-05-19T09:17:26Z" finished-at="2017-05-19T09:17:33Z">
+        <test-method status="PASS" signature="getBrowser(java.lang.String)[pri:0, instance:test.java.Basic.SuiteBaseTemplate@1baeedf]" name="getBrowser" is-config="true" duration-ms="6841" started-at="2017-05-22T17:53:30Z" finished-at="2017-05-22T17:53:37Z">
           <params>
             <param index="0">
               <value>
@@ -37,6 +23,20 @@
           </reporter-output>
         </test-method> <!-- getBrowser -->
       </class> <!-- test.java.Basic.SuiteBaseTemplate -->
+      <class name="test.java.ContactTests.ContactCustomerSupport">
+        <test-method status="PASS" signature="init()[pri:0, instance:test.java.ContactTests.ContactCustomerSupport@3f4d3d]" name="init" is-config="true" duration-ms="16447" started-at="2017-05-22T17:53:37Z" finished-at="2017-05-22T17:53:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="verifyContactProductSupport()[pri:2, instance:test.java.ContactTests.ContactCustomerSupport@3f4d3d]" name="verifyContactProductSupport" duration-ms="13687" started-at="2017-05-22T17:53:54Z" finished-at="2017-05-22T17:54:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactProductSupport -->
+        <test-method status="PASS" signature="verifyWonderwareContactDetails()[pri:3, instance:test.java.ContactTests.ContactCustomerSupport@3f4d3d]" name="verifyWonderwareContactDetails" duration-ms="1227" started-at="2017-05-22T17:54:07Z" finished-at="2017-05-22T17:54:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWonderwareContactDetails -->
+      </class> <!-- test.java.ContactTests.ContactCustomerSupport -->
     </test> <!-- basic -->
   </suite> <!-- Basic Tests -->
 </testng-results>

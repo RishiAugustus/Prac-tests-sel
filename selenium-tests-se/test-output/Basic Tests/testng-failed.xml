@@ -4,14 +4,13 @@
   <parameter name="browser" value="chrome"/>
   <test name="basic(failed)">
     <classes>
-      <class name="test.java.ContactTests.ContactPageTests">
+      <class name="test.java.ContactTests.ContactCustomerSupport">
         <methods>
-          <include name="TestContactSalesPage"/>
+          <include name="testContactProductSupport"/>
           <include name="getBrowser"/>
-          <include name="verifyContactPageTitle"/>
           <include name="init"/>
         </methods>
-      </class> <!-- test.java.ContactTests.ContactPageTests -->
+      </class> <!-- test.java.ContactTests.ContactCustomerSupport -->
     </classes>
   </test> <!-- basic(failed) -->
 </suite> <!-- Failed suite [Basic Tests] -->
