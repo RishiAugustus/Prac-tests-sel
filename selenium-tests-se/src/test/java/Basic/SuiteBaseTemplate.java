@@ -4,11 +4,13 @@ package test.java.Basic;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 
@@ -21,9 +23,9 @@ public class SuiteBaseTemplate {
 	public static Properties Param = null;
 	
 	
-	@BeforeSuite
+	@BeforeTest
 	@Parameters("browser")
-	public void getBrowser(String browser){
+	public void getBrowser(String browser) throws MalformedURLException{
 		DriverProvider driverProvider = new DriverProvider(browser);
 		driver = driverProvider.getdriver();
 		new BasePageClass(driver);

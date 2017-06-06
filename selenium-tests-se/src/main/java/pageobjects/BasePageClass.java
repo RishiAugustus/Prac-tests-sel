@@ -24,9 +24,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 
-
-
-
 public class BasePageClass {
 	public static WebDriver driver;
 	protected int timeout = 20;

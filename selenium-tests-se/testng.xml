@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Basic Tests">
-	<parameter name="browser" value="chrome" />
-	<test name="basic" preserve-order="true">
+<suite name="Basic Tests" parallel="tests">
+	<test name="basic-firefox" preserve-order="true">
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="test.java.Basic.SuiteBaseTemplate" />
 			<!--class name="tests.Basic.testurl" -->
 			<!--class name="tests.BlogTests.BlogTests" -->
 			<!--class name="test.java.ContactTests.ContactPageTests" -->
-			<class name="test.java.ContactTests.ContactCustomerSupport" />
+			<!--class name="test.java.ContactTests.ContactCustomerSupport" -->
+			<class name="test.java.MainPageTests.SEMainPageTests" />
 		</classes>
 	</test>
+	
 </suite>
